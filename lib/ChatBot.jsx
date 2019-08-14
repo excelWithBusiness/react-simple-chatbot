@@ -67,12 +67,13 @@ class ChatBot extends Component {
       customDelay,
       enableMobileAutoFocus,
       userAvatar,
-      userDelay
+      userDelay,
+      hideUserInput
     } = this.props;
     const chatSteps = {};
 
     const defaultBotSettings = { delay: botDelay, avatar: botAvatar };
-    const defaultUserSettings = { delay: userDelay, avatar: userAvatar, hideInput: false };
+    const defaultUserSettings = { delay: userDelay, avatar: userAvatar, hideInput: hideUserInput };
     const defaultCustomSettings = { delay: customDelay };
 
     for (let i = 0, len = steps.length; i < len; i += 1) {
